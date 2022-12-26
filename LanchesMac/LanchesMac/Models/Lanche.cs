@@ -42,7 +42,7 @@ namespace LanchesMac.Models
         public string ImagemThumbnailUrl { get; set; }
 
         [Display(Name = "Prefido?")]
-        public bool IsLanchePrefirido { get; set; }
+        public bool IsLanchePreferido { get; set; }
         [Display(Name ="Estoque")]
         public bool EmEstoque { get; set; }
         public int CategoriaId { get; set; }
