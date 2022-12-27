@@ -16,7 +16,7 @@ namespace LanchesMac.Controllers
         public IActionResult List()
         {
             var lanches = _lanchesRepository.Lanches;
-            return View(lanches); 
+            return View(lanches);
         }
     }
 }

@@ -75,7 +75,7 @@ namespace LanchesMac.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<bool>("IsLanchePrefirido")
+                    b.Property<bool>("IsLanchePreferido")
                         .HasColumnType("bit");
 
                     b.Property<string>("Nome")

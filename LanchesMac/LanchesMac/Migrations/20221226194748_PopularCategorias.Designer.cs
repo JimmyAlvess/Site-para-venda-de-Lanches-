@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LanchesMac.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221223161707_MigracaoInicial")]
-    partial class MigracaoInicial
+    [Migration("20221226194748_PopularCategorias")]
+    partial class PopularCategorias
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -77,7 +77,7 @@ namespace LanchesMac.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<bool>("IsLanchePrefirido")
+                    b.Property<bool>("IsLanchePreferido")
                         .HasColumnType("bit");
 
                     b.Property<string>("Nome")
