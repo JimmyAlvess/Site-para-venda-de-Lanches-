@@ -1,11 +1,16 @@
 ﻿using LanchesMac.Context;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
+=======
+using Microsoft.EntityFrameworkCore.Query.Internal;
+>>>>>>> 1d14294890b806d023d5d680f0ffa04f31dc3631
 
 namespace LanchesMac.Models
 {
     public class CarrinhoCompra
     {
         private readonly AppDbContext _context;
+<<<<<<< HEAD
 
         // injeta o contexto no construtor 
         public CarrinhoCompra(AppDbContext contexto)
@@ -19,11 +24,25 @@ namespace LanchesMac.Models
         {
             //define uma sessão
             ISession session = 
+=======
+        public CarrinhoCompra(AppDbContext contex)
+        {
+            _context = contex;
+        }
+        public List<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
+        public string CarrinhoCompraId { get; set; }
+
+        public static CarrinhoCompra GetCarrinho(IServiceProvider services)
+        {
+            //define uma sessão
+            ISession session =
+>>>>>>> 1d14294890b806d023d5d680f0ffa04f31dc3631
                 services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 
             //obtem um serviço do tipo do nosso contexto
             var context = services.GetService<AppDbContext>();
 
+<<<<<<< HEAD
             //obtem ou gera um id do carrinho
             string carrinhoId = session.GetString("Carrinhoid")?? Guid.NewGuid().ToString();
 
@@ -91,5 +110,20 @@ namespace LanchesMac.Models
                                           .ToList());
         }
       
+=======
+            //obtem ou gera o id do carrinho
+            string carrinhoid = session.GetString("CarrinhoId")?? Guid.NewGuid().ToString();
+
+            //atribui o id do carrinho na Sessão
+            session.SetString("CarrinhoId", carrinhoid);
+
+            //retorna o carrinho com o carrinho com o contexto e o id atribuído ou obtido
+            return new CarrinhoCompra(context)
+            {
+                CarrinhoCompraId = carrinhoid
+            };
+        }
+
+>>>>>>> 1d14294890b806d023d5d680f0ffa04f31dc3631
     }
 }
