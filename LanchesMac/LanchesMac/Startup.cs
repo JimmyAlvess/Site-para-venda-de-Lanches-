@@ -1,4 +1,5 @@
 ﻿using LanchesMac.Context;
+using LanchesMac.Models;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -25,7 +26,9 @@ public class Startup
 
         services.AddTransient<ILanchesRepository,LachesRepository>();
         services.AddTransient<ICategoriaRepository,CategoriaRepository>();
-        services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+        
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
