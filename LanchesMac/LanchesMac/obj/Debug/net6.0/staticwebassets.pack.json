@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\images\\carousel11.jpg"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\carousel13.jpg",
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
+    },
+    {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.png",
+      "PackagePath": "staticwebassets\\images\\remove.png"
     },
     {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",
