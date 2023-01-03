@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\cart-5-16.ico",
+      "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.png",
       "PackagePath": "staticwebassets\\images\\remove.png"
     },
