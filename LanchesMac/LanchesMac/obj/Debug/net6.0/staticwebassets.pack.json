@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\Envelope-icon24.png",
+      "PackagePath": "staticwebassets\\images\\Envelope-icon24.png"
+    },
+    {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\Full-Cart-icon.png",
       "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\Home-iconred.png",
+      "PackagePath": "staticwebassets\\images\\Home-iconred.png"
     },
     {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\carousel11.jpg",
@@ -31,6 +39,14 @@
     {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\cart-5-16.ico",
       "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\faleconosco1.jpg",
+      "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
+    },
+    {
+      "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\phone-app-icon.png",
+      "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },
     {
       "Id": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.png",
