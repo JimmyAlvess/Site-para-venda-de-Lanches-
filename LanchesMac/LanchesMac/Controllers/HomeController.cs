@@ -9,9 +9,9 @@ namespace LanchesMac.Controllers
     public class HomeController : Controller
     {
 
-        private readonly ILanchesRepository _lancheRepository;
+        private readonly ILancheRepository _lancheRepository;
 
-        public HomeController(ILanchesRepository lancheRepository)
+        public HomeController(ILancheRepository lancheRepository)
         {
             _lancheRepository = lancheRepository;
         }

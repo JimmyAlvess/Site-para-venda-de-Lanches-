@@ -7,9 +7,9 @@ namespace LanchesMac.Controllers
 {
     public class CarrinhoCompraController : Controller
     {
-        private readonly ILanchesRepository _lanchesRepository;
+        private readonly ILancheRepository _lanchesRepository;
         private readonly CarrinhoCompra _carrinhoCompra;
-        public CarrinhoCompraController(ILanchesRepository lanchesRepository, CarrinhoCompra carrinhoCompra)
+        public CarrinhoCompraController(ILancheRepository lanchesRepository, CarrinhoCompra carrinhoCompra)
         {
             _lanchesRepository = lanchesRepository;
             _carrinhoCompra = carrinhoCompra;
@@ -24,7 +24,7 @@ namespace LanchesMac.Controllers
             var carrinhoCompraVM = new CarrinhoCompraViewModel
             {
                 CarrinhoCompra = _carrinhoCompra,
-                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoTotal()
+                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()
             };
 
             return View(carrinhoCompraVM);

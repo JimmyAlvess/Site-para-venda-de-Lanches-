@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ECkiSpJHzHG85z6XbPK1XKVgkHOGj0OLv4Dh8fsSAuKbMxqEIX3zOPvI7qlU3/0dBRDDj3TvRkCnQZkNVKqlgA==",
+  "dgSpecHash": "o7/XrAlWAmMQEGtRjHRPK1XlyEX13Sr89K6dOYVxGIE2lloKsBIuub51x8CkP56lPKrt4G99A8+AyN5QiISASg==",
   "success": true,
-  "projectFilePath": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+  "projectFilePath": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jimmy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jimmy\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
