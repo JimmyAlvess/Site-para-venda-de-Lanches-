@@ -10024,11 +10024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+      "projectUniqueName": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
       "projectName": "LanchesMac",
-      "projectPath": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+      "projectPath": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
       "packagesPath": "C:\\Users\\Jimmy\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\ASP.NET Core MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\obj\\",
+      "outputPath": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
