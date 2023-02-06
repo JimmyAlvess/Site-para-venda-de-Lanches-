@@ -2,7 +2,7 @@
 
 namespace LanchesMac.Repositories.Interfaces
 {
-    public interface ILanchesRepository
+    public interface ILancheRepository
     {
         IEnumerable<Lanche> Lanches { get; }
         IEnumerable<Lanche> LanchesPreferidos { get; }

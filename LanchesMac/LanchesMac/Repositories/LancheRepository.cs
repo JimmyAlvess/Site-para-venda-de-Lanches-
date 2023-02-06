@@ -6,22 +6,23 @@ using Microsoft.Extensions.FileProviders;
 
 namespace LanchesMac.Repositories
 {
-    public class LachesRepository : ILanchesRepository
+
+    public class LancheRepository : ILancheRepository
     {
         private readonly AppDbContext _context;
 
-        public LachesRepository(AppDbContext contexto)
+        public LancheRepository(AppDbContext contexto)
         {
             _context = contexto;
         }
-        public IEnumerable<Lanche> Lanches => _context.Lanches;
+        public IEnumerable<Lanche> Lanches => _context.Lanches.Include(c => c.categoria);
 
         public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches
             .Where(p => p.IsLanchePreferido)
             .Include(c => c.categoria);
         public Lanche GetLancheById(int lancheid)
         {
-          return  _context.Lanches.FirstOrDefault(l => l.LancheId == lancheid);
+            return _context.Lanches.FirstOrDefault(l => l.LancheId == lancheid);
         }
     }
 }

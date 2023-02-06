@@ -18,13 +18,19 @@ namespace LanchesMac.Components
         {
             var itens = _carrinhoCompra.GetCarrinhoCompraItens();
 
-            _carrinhoCompra.GetCarrinhoCompraItens();
+            //var itens = new List<CarrinhoCompraItem>()
+            //{
+            //    new CarrinhoCompraItem(),
+            //    new CarrinhoCompraItem()
+            //};
+
+
             _carrinhoCompra.CarrinhoCompraItems = itens;
 
             var carrinhoCompraVM = new CarrinhoCompraViewModel
             {
                 CarrinhoCompra = _carrinhoCompra,
-                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoTotal()
+                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()
             };
 
             return View(carrinhoCompraVM);

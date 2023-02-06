@@ -24,11 +24,11 @@ public class Startup
         services.AddMemoryCache();
         services.AddSession();
 
-        services.AddTransient<ILanchesRepository,LachesRepository>();
-        services.AddTransient<ICategoriaRepository,CategoriaRepository>();
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
-        
+
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,19 +41,24 @@ public class Startup
         else
         {
             app.UseExceptionHandler("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
         app.UseHttpsRedirection();
-        app.UseStaticFiles();
 
+        app.UseStaticFiles();
         app.UseRouting();
 
-        app.UseAuthorization();
         app.UseSession();
+
+        app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
         {
+            endpoints.MapControllerRoute(
+               name: "categoriaFiltro",
+               pattern: "Lanche/{action}/{categoria?}",
+               defaults: new { Controller = "Lanche", action = "List" });
+
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
