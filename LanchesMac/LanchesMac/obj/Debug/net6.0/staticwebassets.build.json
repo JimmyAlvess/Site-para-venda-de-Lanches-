@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "IFrRrJ5Y0saJBsYte6+HDSczYl5F3Fpzb462MnuQV9s=",
+=======
   "Hash": "W6jg6x2R2x7fq8Q+y/gn0Lwc1+3FDgaWkv54mAh4Ql8=",
+>>>>>>> desenvolvimento
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -153,6 +157,12 @@
       "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
     },
     {
+<<<<<<< HEAD
+      "Identity": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\Envelope-icon24.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\",
+=======
       "Identity": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\delete.png",
       "SourceId": "LanchesMac",
       "SourceType": "Discovered",
@@ -174,6 +184,7 @@
       "SourceId": "LanchesMac",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\",
+>>>>>>> desenvolvimento
       "BasePath": "_content/LanchesMac",
       "RelativePath": "images/Envelope-icon24.png",
       "AssetKind": "All",

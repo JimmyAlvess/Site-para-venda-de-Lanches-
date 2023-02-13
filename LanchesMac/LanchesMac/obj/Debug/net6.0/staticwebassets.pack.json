@@ -41,10 +41,13 @@
       "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
     },
     {
+<<<<<<< HEAD
+=======
       "Id": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\delete.png",
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
+>>>>>>> desenvolvimento
       "Id": "C:\\Project\\ASP NET CORE MVC\\Site-para-venda-de-Lanches-\\LanchesMac\\LanchesMac\\wwwroot\\images\\faleconosco1.jpg",
       "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
     },

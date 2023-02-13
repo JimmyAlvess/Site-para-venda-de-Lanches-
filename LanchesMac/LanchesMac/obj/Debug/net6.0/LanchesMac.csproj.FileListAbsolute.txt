@@ -268,6 +268,8 @@ C:\Project\ASP.NET Core MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bi
 C:\Project\ASP.NET Core MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Project\ASP.NET Core MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Project\ASP.NET Core MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+<<<<<<< HEAD
+=======
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.csproj.AssemblyReference.cache
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.GeneratedMSBuildEditorConfig.editorconfig
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.AssemblyInfoInputs.cache
@@ -279,6 +281,7 @@ C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\ob
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.dll
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\refint\LanchesMac.dll
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.pdb
+>>>>>>> desenvolvimento
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\appsettings.Development.json
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\appsettings.json
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\LanchesMac.staticwebassets.runtime.json
@@ -525,6 +528,17 @@ C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bi
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+<<<<<<< HEAD
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.csproj.AssemblyReference.cache
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.AssemblyInfoInputs.cache
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.AssemblyInfo.cs
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.csproj.CoreCompileInputs.cache
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.MvcApplicationPartsAssemblyInfo.cache
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.RazorAssemblyInfo.cache
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.RazorAssemblyInfo.cs
+=======
+>>>>>>> desenvolvimento
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.LanchesMac.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.build.LanchesMac.props
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LanchesMac.props
@@ -536,5 +550,11 @@ C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\ob
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\scopedcss\bundle\LanchesMac.styles.css
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\scopedcss\projectbundle\LanchesMac.bundle.scp.css
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.csproj.CopyComplete
+<<<<<<< HEAD
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.dll
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\refint\LanchesMac.dll
+C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.pdb
+=======
+>>>>>>> desenvolvimento
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.genruntimeconfig.cache
 C:\Project\ASP NET CORE MVC\Site-para-venda-de-Lanches-\LanchesMac\LanchesMac\obj\Debug\net6.0\ref\LanchesMac.dll
