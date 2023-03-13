@@ -7,18 +7,19 @@ namespace LanchesMac.Controllers
 {
     public class CarrinhoCompraController : Controller
     {
-        private readonly ILancheRepository _lanchesRepository;
+        private readonly ILancheRepository _lancheRepository;
         private readonly CarrinhoCompra _carrinhoCompra;
-        public CarrinhoCompraController(ILancheRepository lanchesRepository, CarrinhoCompra carrinhoCompra)
+
+        public CarrinhoCompraController(ILancheRepository lancheRepository,
+            CarrinhoCompra carrinhoCompra)
         {
-            _lanchesRepository = lanchesRepository;
+            _lancheRepository = lancheRepository;
             _carrinhoCompra = carrinhoCompra;
         }
+
         public IActionResult Index()
         {
             var itens = _carrinhoCompra.GetCarrinhoCompraItens();
-
-            _carrinhoCompra.GetCarrinhoCompraItens();
             _carrinhoCompra.CarrinhoCompraItems = itens;
 
             var carrinhoCompraVM = new CarrinhoCompraViewModel
@@ -29,21 +30,24 @@ namespace LanchesMac.Controllers
 
             return View(carrinhoCompraVM);
         }
-        public RedirectToActionResult AdicionarItemNoCarrinhoCompra(int lancheid)
+        public IActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
         {
-            var lancheSelecionado = _lanchesRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheid);
-            
-            if(lancheSelecionado != null)
+            var lancheSelecionado = _lancheRepository.Lanches
+                                    .FirstOrDefault(p => p.LancheId == lancheId);
+
+            if (lancheSelecionado != null)
             {
-                _carrinhoCompra.AdicionarCarrinho(lancheSelecionado);
+                _carrinhoCompra.AdicionarAoCarrinho(lancheSelecionado);
             }
             return RedirectToAction("Index");
         }
-        public IActionResult RemoverItemDoCarrinho (int lancheId)
-        {
-            var lancheSelecionado = _lanchesRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
 
-            if(lancheSelecionado != null)
+        public IActionResult RemoverItemDoCarrinhoCompra(int lancheId)
+        {
+            var lancheSelecionado = _lancheRepository.Lanches
+                                    .FirstOrDefault(p => p.LancheId == lancheId);
+
+            if (lancheSelecionado != null)
             {
                 _carrinhoCompra.RemoverDoCarrinho(lancheSelecionado);
             }
@@ -51,6 +55,3 @@ namespace LanchesMac.Controllers
         }
     }
 }
-
-    
-

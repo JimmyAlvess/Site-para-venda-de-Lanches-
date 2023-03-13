@@ -29,12 +29,15 @@ namespace LanchesMac.Repositories
                 {
                     Quantidade = carrinhoItem.Quantidade,
                     LancheId = carrinhoItem.lanche.LancheId,
-                    IdPedido = pedido.PedidoId,
+                    PedidoId = pedido.PedidoId,
                     Preco = carrinhoItem.lanche.Preco
                 };
-                _appDbContext.pedidoDetalhes.Add(pedidoDetail);
+                _appDbContext.PedidoDetalhes.Add(pedidoDetail);
             }
             _appDbContext.SaveChanges();
         }
+
+      
+
     }
 }

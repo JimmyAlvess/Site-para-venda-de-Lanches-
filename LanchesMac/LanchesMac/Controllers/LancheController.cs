@@ -1,19 +1,16 @@
-﻿using LanchesMac.Context;
-using LanchesMac.Models;
+﻿using LanchesMac.Models;
 using LanchesMac.Repositories.Interfaces;
 using LanchesMac.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace LanchesMac.Controllers
 {
     public class LancheController : Controller
     {
-        private readonly ILancheRepository _lanchesRepository;
-
-        public LancheController(ILancheRepository lanchesRepository)
+        private readonly ILancheRepository _lancheRepository;
+        public LancheController(ILancheRepository lancheRepository)
         {
-            _lanchesRepository = lanchesRepository;
+            _lancheRepository = lancheRepository;
         }
 
         public IActionResult List(string categoria)
@@ -23,42 +20,42 @@ namespace LanchesMac.Controllers
 
             if (string.IsNullOrEmpty(categoria))
             {
-                lanches = _lanchesRepository.Lanches.OrderBy(l => l.LancheId);
-                categoriaAtual = "Todos os Lanches";
+                lanches = _lancheRepository.Lanches.OrderBy(l => l.LancheId);
+                categoriaAtual = "Todos os lanches";
             }
             else
             {
-                //if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase)) 
+                //if (string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
                 //{
-                //    lanches = _lanchesRepository.Lanches
-                //        .Where(l => l.categoria.CategoriaNome.Equals("Normal"))
-                //        .OrderBy(c => c.Nome);
-
+                //    lanches = _lancheRepository.Lanches
+                //        .Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
+                //        .OrderBy(l => l.Nome);
                 //}
                 //else
                 //{
-                //    lanches = _lanchesRepository.Lanches
-                //        .Where(l => l.categoria.CategoriaNome.Equals("Natural"))
-                //        .OrderBy(c => c.Nome);
+                //    lanches = _lancheRepository.Lanches
+                //       .Where(l => l.Categoria.CategoriaNome.Equals("Natural"))
+                //       .OrderBy(l => l.Nome);
                 //}
-                lanches = _lanchesRepository.Lanches
-                    .Where(l => l.categoria.CategoriaNome.Equals(categoria))
-                    .OrderBy(c => c.Nome);
+                lanches = _lancheRepository.Lanches
+                          .Where(l => l.categoria.CategoriaNome.Equals(categoria))
+                          .OrderBy(c => c.Nome);
 
                 categoriaAtual = categoria;
             }
 
-            var lancheListViewModel = new LancheListViewModel
+            var lanchesListViewModel = new LancheListViewModel
             {
                 lanches = lanches,
                 CategoriaAtual = categoriaAtual
             };
-            return View(lancheListViewModel);
+
+            return View(lanchesListViewModel);
         }
 
         public IActionResult Details(int lancheId)
         {
-            var lanche = _lanchesRepository.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+            var lanche = _lancheRepository.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
             return View(lanche);
         }
 
@@ -69,13 +66,13 @@ namespace LanchesMac.Controllers
 
             if (string.IsNullOrEmpty(searchString))
             {
-                lanches = _lanchesRepository.Lanches.OrderBy(p => p.LancheId);
+                lanches = _lancheRepository.Lanches.OrderBy(p => p.LancheId);
                 categoriaAtual = "Todos os Lanches";
             }
             else
             {
-                lanches = _lanchesRepository.Lanches
-                   .Where(p => p.Nome.ToLower().Contains(searchString.ToLower()));
+                lanches = _lancheRepository.Lanches
+                          .Where(p => p.Nome.ToLower().Contains(searchString.ToLower()));
 
                 if (lanches.Any())
                     categoriaAtual = "Lanches";
