@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LanchesMac.Migrations
 {
-    public partial class PedidoDetalhe : Migration
+    public partial class PedidoDetalhes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -35,48 +35,48 @@ namespace LanchesMac.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PedidosDetalhe",
+                name: "PedidoDetalhes",
                 columns: table => new
                 {
-                    IdPedidoDetalhe = table.Column<int>(type: "int", nullable: false)
+                    PedidoDetalheId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Quantidade = table.Column<int>(type: "int", nullable: false),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    PedidoId = table.Column<int>(type: "int", nullable: false),
                     LancheId = table.Column<int>(type: "int", nullable: false),
-                    PedidoId = table.Column<int>(type: "int", nullable: true),
-                    IdPedido = table.Column<int>(type: "int", nullable: false)
+                    Quantidade = table.Column<int>(type: "int", nullable: false),
+                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PedidosDetalhe", x => x.IdPedidoDetalhe);
+                    table.PrimaryKey("PK_PedidoDetalhes", x => x.PedidoDetalheId);
                     table.ForeignKey(
-                        name: "FK_PedidosDetalhe_Lanches_LancheId",
+                        name: "FK_PedidoDetalhes_Lanches_LancheId",
                         column: x => x.LancheId,
                         principalTable: "Lanches",
                         principalColumn: "LancheId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PedidosDetalhe_Pedidos_PedidoId",
+                        name: "FK_PedidoDetalhes_Pedidos_PedidoId",
                         column: x => x.PedidoId,
                         principalTable: "Pedidos",
-                        principalColumn: "PedidoId");
+                        principalColumn: "PedidoId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_PedidosDetalhe_LancheId",
-                table: "PedidosDetalhe",
+                name: "IX_PedidoDetalhes_LancheId",
+                table: "PedidoDetalhes",
                 column: "LancheId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PedidosDetalhe_PedidoId",
-                table: "PedidosDetalhe",
+                name: "IX_PedidoDetalhes_PedidoId",
+                table: "PedidoDetalhes",
                 column: "PedidoId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PedidosDetalhe");
+                name: "PedidoDetalhes");
 
             migrationBuilder.DropTable(
                 name: "Pedidos");

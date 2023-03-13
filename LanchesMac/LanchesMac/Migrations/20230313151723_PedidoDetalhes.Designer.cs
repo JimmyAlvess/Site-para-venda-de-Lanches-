@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LanchesMac.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230129032810_PedidoDetalhe")]
-    partial class PedidoDetalhe
+    [Migration("20230313151723_PedidoDetalhes")]
+    partial class PedidoDetalhes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -190,19 +190,16 @@ namespace LanchesMac.Migrations
 
             modelBuilder.Entity("LanchesMac.Models.PedidoDetalhe", b =>
                 {
-                    b.Property<int>("IdPedidoDetalhe")
+                    b.Property<int>("PedidoDetalheId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPedidoDetalhe"), 1L, 1);
-
-                    b.Property<int>("IdPedido")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PedidoDetalheId"), 1L, 1);
 
                     b.Property<int>("LancheId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PedidoId")
+                    b.Property<int>("PedidoId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Preco")
@@ -211,13 +208,13 @@ namespace LanchesMac.Migrations
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
-                    b.HasKey("IdPedidoDetalhe");
+                    b.HasKey("PedidoDetalheId");
 
                     b.HasIndex("LancheId");
 
                     b.HasIndex("PedidoId");
 
-                    b.ToTable("PedidosDetalhe");
+                    b.ToTable("PedidoDetalhes");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.CarrinhoCompraItem", b =>
@@ -250,7 +247,9 @@ namespace LanchesMac.Migrations
 
                     b.HasOne("LanchesMac.Models.Pedido", "Pedido")
                         .WithMany("PedidoItens")
-                        .HasForeignKey("PedidoId");
+                        .HasForeignKey("PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Lanche");
 
